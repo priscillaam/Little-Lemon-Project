@@ -1,2 +1,2 @@
-# Little-Lemon-Project
+# little-lemon-project
 Capstone project
