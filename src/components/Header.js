@@ -3,7 +3,7 @@ import logo from '../images/Logo.svg'
 
 const Header = () => {
     const imgStyle = {
-        width: '100%',
+        width: '90%',
         height: '100%',
         objectFit: 'fill'
     }

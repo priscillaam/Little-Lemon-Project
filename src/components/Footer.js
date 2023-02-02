@@ -8,27 +8,31 @@ const Footer = () => {
                 <img src={logo} alt='footer-logo'/>
             </div>
             <div className='footerContainer1'>
-                <h3>Content</h3>
+                <h3>Navigation</h3>
                 <ul>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Reservations</li>
+                    <li>Order</li>
+                    <li>Login</li>
                 </ul>
             </div>
             <div className='footerContainer2'>
-                <h3>Content</h3>
+                <h3>Contact</h3>
                 <ul>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
+                    <li>2395 Maldove Way,
+                        Chicago Illinois
+                    </li>
+                    <li>(629)-243-6827</li>
+                    <li>info@littlelemon.com</li>
                 </ul>
             </div>
             <div className='footerContainer3'>
-                <h3>Content</h3>
+                <h3>Connect</h3>
                 <ul>
-                    <li>content</li>
-                    <li>content</li>
-                    <li>content</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Join us!</li>
                 </ul>
             </div>
         </>
