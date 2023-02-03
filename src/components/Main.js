@@ -3,16 +3,15 @@ import food from '../images/restaurant-food.jpg';
 import greekSalad from '../images/greek-salad.jpg';
 import bruchetta from '../images/bruchetta.svg';
 import lemonDessert from '../images/lemon-dessert.jpg';
-import user from '../images/dummy-profile.jpg';
+import user1 from '../images/woman-reviewer1.jpg';
+import user2 from '../images/man-reviewer1.jpg';
+import user3 from '../images/man-reviewer2.jpg';
+import user4 from '../images/woman-reviewer2.jpg';
 import aboutImage1 from '../images/mario-and-adrian1.jpg';
 import aboutImage2 from '../images/mario-and-adrian2.jpg';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
-    const imgStyle = {
-        width: '90%',
-        height: '100%',
-        objectFit: 'fill'
-    }
     return (
         <>
             <div className='reserve'>
@@ -21,12 +20,12 @@ const Main = () => {
                         <h1>Little Lemon</h1>
                         <h3>Chicago</h3>
                         <p style={{width: '68%'}}>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                        <button>Reserve a Table</button>
+                        <Link className="reserve-button" to="/reservations">Reserve a table</Link>
                     </div>
                 </div>
                 <div className='reserveContainer2'>
                     <div className='container'>
-                        <img src={food} alt='table-image'/>
+                        <img src={food} alt='table-img'/>
                     </div>
                 </div>
             </div>
@@ -34,7 +33,7 @@ const Main = () => {
                 <div className='specialsHeader'>
                         <h2>This weeks specials!</h2>
                     <div className='buttonDiv'>
-                        <button className='menuButton'>Online Menu</button>
+                    <Link className="menuButton" to="/menu">Online Menu</Link>
                     </div>
                 </div>
                 <div className="special1">
@@ -76,25 +75,25 @@ const Main = () => {
                 </div>
                 <div className='review1'>
                     <h5>4.9</h5>
-                    <img src={user} alt='reviewer1'/>
+                    <img src={user1} alt='reviewer1'/>
                     <h6>Olivia Rose</h6>
                     <p>Super fresh delicious food.</p>
                 </div>
                 <div className='review2'>
                     <h5>4.7</h5>
-                    <img src={user} alt='reviewer1'/>
+                    <img src={user2} alt='reviewer1'/>
                     <h6>Michael Smith</h6>
                     <p>Fantastic knowledgeable service.</p>
                 </div>
                 <div className='review3'>
                     <h5>4.6</h5>
-                    <img src={user} alt='reviewer1'/>
+                    <img src={user3} alt='reviewer1'/>
                     <h6>John Lee</h6>
                     <p>Food is packed with flavours but light and healthy.</p>
                 </div>
                 <div className='review4'>
                     <h5>5.0</h5>
-                    <img src={user} alt='reviewer1'/>
+                    <img src={user4} alt='reviewer1'/>
                     <h6>Desiree Parker</h6>
                     <p>The employees provide quick and efficient service.</p>
                 </div>
@@ -110,10 +109,10 @@ const Main = () => {
                 </div>
                 <div className='aboutContainer2'>
                     <div className='aboutImage1'>
-                        <img src={aboutImage1}/>
+                        <img src={aboutImage1} alt='about-img'/>
                     </div>
                     <div className='aboutImage2'>
-                        <img src={aboutImage2}/>
+                        <img src={aboutImage2} alt='about-img'/>
                     </div>
                 </div>
             </div>

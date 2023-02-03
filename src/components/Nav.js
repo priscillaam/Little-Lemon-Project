@@ -1,31 +1,32 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const Nav = () => {
+export const Nav = () => {
     const navStyle = {
         display: 'inline',
-        padding: '20px'
+        padding: '10px'
     }
     return (
         <>
             <div className='navBar'>
                 <ul>
                     <li style={navStyle}>
-                        <a href='#'>Home</a>
+                        <Link to="/" className="nav-item">Home</Link>
                     </li>
                     <li style={navStyle}>
-                        <a href='#'>About</a>
+                        <Link to="/about" className="nav-item">About Little Lemon</Link>
                     </li>
                     <li style={navStyle}>
-                        <a href='#'>Menu</a>
+                        <Link to="/contact" className="nav-item">Contact</Link>
                     </li>
                     <li style={navStyle}>
-                        <a href='#'>Reservations</a>
+                        <Link to="/menu" className="nav-item">Menu</Link>
                     </li>
                     <li style={navStyle}>
-                        <a href='#'>Order Online</a>
+                        <Link to="/reservations" className="nav-item">Booking</Link>
                     </li>
                     <li style={navStyle}>
-                        <a href='#'>Login</a>
+                        <Link to="/order" className="nav-item">Order Online</Link>
                     </li>
                 </ul>
             </div>
