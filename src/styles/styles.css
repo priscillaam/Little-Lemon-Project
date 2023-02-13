@@ -20,7 +20,7 @@ li {
 
 /* base styles  */
 body {
-    background: var(--quinary);
+    background: white;
     font-family: 'Markazi';
 }
 .button{
@@ -77,15 +77,16 @@ h4 {
     display: flex;
     position: relative;
 }
-.site-nav h1{
-    color: var(--primary);
+.site-nav img{
+    height: 100%;
+    object-fit: cover;
+    margin-left: 15%;
     grid-column: span 4;
-    margin: 0;
 }
 .site-nav ul{
     grid-column: span 4;
     position: absolute;
-    right: 5px;
+    right: 18%;
 }
 .site-nav li{
     display: inline;
@@ -103,7 +104,7 @@ h4 {
 }
 .reserve-text{
     grid-column: 1/9;
-    padding-top: 20px;
+    margin-top: 10%;
 }
 .reserve-text *{
     display: flex;
@@ -122,14 +123,18 @@ h4 {
 .reserve-text h2{
     color: var(--secondary);
     margin-bottom: 0;
+    font-size: 2em;
+    line-height: .5em;
 }
 .reserve-text h3{
     margin-top: 0;
+    font-size: 1.3em;
 }
 .reserve-text p{
     font-family: 'Karla';
     font-size: .8em;
     font-weight: 600;
+    margin-top: 20px;
 }
 .reserve-text button{
     margin: 30px 0;
@@ -344,12 +349,12 @@ footer li{
     body{
         font-size: 24px;
     }
-    .reserve-text{
-        margin-top: 10%;
-    }
     .reserve-img{
         grid-column: 5/9;
         margin-top: 25%;
+    }
+    .reserve-img img{
+        width: 85%
     }
     .specials {
         grid-template-columns: repeat(9, 1fr);
@@ -391,12 +396,6 @@ footer li{
 @media screen and (min-width: 900px){
     body{
         font-size: 28px;
-    }
-    #reserve{
-        background: linear-gradient(to bottom, var(--primary) 60%, white 0%);
-    }
-    .reserve-img img{
-        width: 85%;
     }
     #specials h2{
         top: 10px;
@@ -461,7 +460,7 @@ footer li{
     }
     #reserve{
         padding: 0 15% 20px 15%;
-        background: linear-gradient(to bottom, var(--primary) 70%, white 0%);
+        background: linear-gradient(to bottom, var(--primary) 80%, white 0%);
     }
     .reserve-img img{
         width: 85%;
@@ -490,10 +489,10 @@ footer li{
         padding-top: 20px;
     }
     .contact-info{
-        grid-column: 7/8;
+        grid-column: 2/3;
     }
     .social-media{
-        grid-column: 8/9;
+        grid-column: 3/4;
     }
 
 }

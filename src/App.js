@@ -10,12 +10,14 @@ import user1 from './assets/man-reviewer1.jpg';
 import user2 from './assets/woman-reviewer1.jpg';
 import user3 from './assets/woman-reviewer2.jpg';
 import user4 from './assets/man-reviewer2.jpg';
+import logo from './assets/Logo.svg';
+import footerLogo from './assets/footer-logo.JPG';
 
 function App() {
   return (
     <>
     <nav className="site-nav grid">
-      <h1>Little Lemon</h1>
+      <img src={logo} alt='little-lemon-logo'/>
       <ul>
         <li><a href='#reserve'>Reserve</a></li>
         <li><a href='#specials'>Specials</a></li>
@@ -110,6 +112,7 @@ function App() {
         </div>
     </section>
     <footer className="grid">
+        <img src={footerLogo} alt='footer-logo'/>
         <div className='contact-info'>
           <h4>Contact</h4>
             <ul>
