@@ -1,36 +1,28 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import logo from '../assets/Logo.svg';
+import { Routes, Route, Link, Outlet } from 'react-router-dom';
+import Home from './HomePage';
+import Footer from './Footer';
+import BookingPage from './BookingPage';
+import { HashLink } from 'react-router-hash-link';
 
 export const Nav = () => {
-    const navStyle = {
-        display: 'inline',
-        padding: '10px'
-    }
     return (
-        <>
-            <div className='navBar'>
-                <ul>
-                    <li style={navStyle}>
-                        <Link to="/" className="nav-item">Home</Link>
-                    </li>
-                    <li style={navStyle}>
-                        <Link to="/about" className="nav-item">About Little Lemon</Link>
-                    </li>
-                    <li style={navStyle}>
-                        <Link to="/contact" className="nav-item">Contact</Link>
-                    </li>
-                    <li style={navStyle}>
-                        <Link to="/menu" className="nav-item">Menu</Link>
-                    </li>
-                    <li style={navStyle}>
-                        <Link to="/reservations" className="nav-item">Booking</Link>
-                    </li>
-                    <li style={navStyle}>
-                        <Link to="/order" className="nav-item">Order Online</Link>
-                    </li>
-                </ul>
-            </div>
-        </>
+        <div>
+        <nav className="site-nav grid">
+      <img src={logo} alt='little-lemon-logo'/>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><Link to='/booking'>Reserve</Link></li>
+        <li><HashLink to='/#specials'>Specials</HashLink></li>
+        <li><HashLink to='/#reviews'>Reviews</HashLink></li>
+        <li><HashLink to='/#about'>About</HashLink></li>
+        {/* <li><Link href='/'>Order Online</Link></li> */}
+      </ul>
+    </nav>
+    <Outlet />
+    <Footer />
+    </div>
     )
 }
 export default Nav;

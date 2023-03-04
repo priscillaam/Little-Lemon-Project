@@ -462,6 +462,9 @@ footer li{
         padding: 0 15% 20px 15%;
         background: linear-gradient(to bottom, var(--primary) 80%, white 0%);
     }
+    .reserve-text{
+        padding-top: 150px;
+    }
     .reserve-img img{
         width: 85%;
     }
