@@ -7,6 +7,9 @@
     --quinary: #edefee;
 }
 /* reset  */
+html, body {
+    height: 100%;
+}
 body, p, a, ul, li {
     margin: 0;
     padding: 0;
