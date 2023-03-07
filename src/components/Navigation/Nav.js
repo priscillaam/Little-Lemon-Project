@@ -7,21 +7,23 @@ import './Nav.css';
 
 export const Nav = () => {
     return (
-        <div>
-        <nav className="site-nav grid">
-      <img src={logo} alt='little-lemon-logo'/>
-      <ul>
-        <li><a href='/'>Home</a></li>
-        <li><Link to='/booking'>Reserve</Link></li>
-        <li><HashLink to='/#specials'>Specials</HashLink></li>
-        <li><HashLink to='/#reviews'>Reviews</HashLink></li>
-        <li><HashLink to='/#about'>About</HashLink></li>
-        {/* <li><Link href='/'>Order Online</Link></li> */}
-      </ul>
-    </nav>
-    <Outlet />
-    <Footer />
-    </div>
+      <div>
+        <header>
+          <img src={logo} alt='little-lemon-logo'/>
+          <nav className="site-nav grid">
+            <ul>
+              <li><a href='/'>Home</a></li>
+              <li><Link to='/booking'>Reserve</Link></li>
+              <li><HashLink to='/#specials'>Specials</HashLink></li>
+              <li><HashLink to='/#reviews'>Reviews</HashLink></li>
+              <li><HashLink to='/#about'>About</HashLink></li>
+              {/* <li><Link href='/'>Order Online</Link></li> */}
+            </ul>
+          </nav>
+        </header>
+        <Outlet />
+        <Footer />
+      </div>
     )
 }
 export default Nav;

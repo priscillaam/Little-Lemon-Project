@@ -1,73 +1,6 @@
-/* small tablet styles  */
-@media screen and (min-width: 460px){
-    #reserve{
-        background: linear-gradient(to bottom, var(--primary) 80%, white 0%);
-    }
-    .reserve-text{
-        grid-column: 1/5;
-        padding-top: 20px;
-    }
-    .reserve-text *{
-        display: flex;
-        margin: 0 auto;
-    }
-    .reserve-img{
-        grid-column: 5/9;
-        margin: 0 auto;
-        margin-top: 45%;
-    }
-    .reviews article {
-        grid-column: span 4;
-        width: 70%;
-    }
-    .specials a{
-        max-width: 60%;
-    }
-}
 @media screen and (min-width: 620px){
     body{
         font-size: 24px;
-    }
-    .reserve-img{
-        grid-column: 5/9;
-        margin-top: 25%;
-    }
-    .reserve-img img{
-        width: 85%
-    }
-    .specials {
-        grid-template-columns: repeat(9, 1fr);
-        display: grid;
-        margin: 0 20px;
-    }
-    .specials a{
-        grid-column: span 3;
-        height: 400px;
-        margin: 20px 10px;
-        max-width: 100%;
-    }
-    .specials img{
-        height: 200px;
-        margin-bottom: 0;
-    }
-    a :nth-child(4){
-        font-size: .6em;
-    }
-    .specials button {
-        font-size: .6em;
-    }
-    .reviews article {
-        grid-column-start: span 3 2;
-        width: 150px;
-        padding: 10px;
-    }
-    .reviews h3{
-        font-size: .6em;
-        max-width: 100px;
-    }
-    .reviews p{
-        max-width: 100%;
-        font-size: .5em;
     }
 }
 
@@ -76,60 +9,6 @@
     body{
         font-size: 28px;
     }
-    #specials h2{
-        top: 10px;
-        left: 8%;
-        position: relative;
-        display: inline;
-    }
-    #specials .button {
-        right: 8%;
-        position: absolute;
-        display: inline;
-        margin: 25px auto;
-    }
-    .specials {
-        margin: 0 60px;
-    }
-    .reviews{
-        margin: 0 10%;
-    }
-    .reviews article {
-        grid-column-start: span 2;
-    }
-    .reviews h3{
-        font-size: .5em;
-    }
-    .reviews p{
-        font-size: .4em;
-    }
-    #about{
-        margin: 0 30px;
-        align-items: center;
-    }
-    .about-text{
-        grid-column: 1/5;
-    }
-    .about-text p {
-        font-size: .8em;
-    }
-    .img-stack{
-        grid-column: 5/9;
-        grid-row: 1;
-    }
-    footer h4{
-        font-size: 1em;
-    }
-    footer li{
-        font-size: .8em;
-    }
-    .contact-info{
-        grid-column: 6/span 2;
-    }
-    .social-media{
-        grid-column: 8/span 2;
-    }
-
 }
 
 /* desktop styles  */
@@ -137,44 +16,4 @@
     body{
         font-size: 32px;
     }
-    #reserve{
-        padding: 0 15% 20px 15%;
-        background: linear-gradient(to bottom, var(--primary) 80%, white 0%);
-    }
-    .reserve-text{
-        padding-top: 150px;
-    }
-    .reserve-img img{
-        width: 85%;
-    }
-    #specials h2{
-        left: 19%;
-    }
-    #specials .button {
-        right: 19%;
-    }
-    .specials {
-        margin: 30px 18%;
-    }
-    .reviews{
-        margin: 0 18%;
-    }
-    .reviews article * {
-        max-width: 90%;
-    }
-    #about{
-        margin: 3% 8%;
-        align-items: center;
-    }
-    .about-text p {
-        font-size: .7em;
-        padding-top: 20px;
-    }
-    .contact-info{
-        grid-column: 2/3;
-    }
-    .social-media{
-        grid-column: 3/4;
-    }
-
 }

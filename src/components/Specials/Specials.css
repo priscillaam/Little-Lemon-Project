@@ -69,3 +69,65 @@ a :nth-child(4){
     color: var(--tertiary);
     font-weight: 600;
 }
+/* small tablet styles  */
+@media screen and (min-width: 460px){
+    .specials a{
+        max-width: 60%;
+    }
+}
+@media screen and (min-width: 620px){
+    .specials {
+        grid-template-columns: repeat(9, 1fr);
+        display: grid;
+        margin: 0 20px;
+    }
+    .specials a{
+        grid-column: span 3;
+        height: 400px;
+        margin: 20px 10px;
+        max-width: 100%;
+    }
+    .specials img{
+        height: 200px;
+        margin-bottom: 0;
+    }
+    a :nth-child(4){
+        font-size: .6em;
+    }
+    .specials button {
+        font-size: .6em;
+    }
+}
+
+/* large tablets and laptops  */
+@media screen and (min-width: 900px){
+    #specials h2{
+        top: 10px;
+        left: 8%;
+        position: relative;
+        display: inline;
+    }
+    #specials .button {
+        right: 8%;
+        position: absolute;
+        display: inline;
+        margin: 25px auto;
+    }
+    .specials {
+        margin: 0 60px;
+    }
+}
+
+/* desktop styles  */
+@media screen and (min-width: 1050px){
+    #specials h2{
+        left: 19%;
+    }
+    #specials .button {
+        right: 19%;
+    }
+    .specials {
+        margin: 30px 18%;
+    }
+
+}

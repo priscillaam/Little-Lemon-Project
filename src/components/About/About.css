@@ -50,3 +50,33 @@
     border-radius: 4px;
     margin-top: 60%;
 }
+
+/* large tablets and laptops  */
+@media screen and (min-width: 900px){
+    #about{
+        margin: 0 30px;
+        align-items: center;
+    }
+    .about-text{
+        grid-column: 1/5;
+    }
+    .about-text p {
+        font-size: .8em;
+    }
+    .img-stack{
+        grid-column: 5/9;
+        grid-row: 1;
+    }
+}
+
+/* desktop styles  */
+@media screen and (min-width: 1050px){
+    #about{
+        margin: 3% 8%;
+        align-items: center;
+    }
+    .about-text p {
+        font-size: .7em;
+        padding-top: 20px;
+    }
+}

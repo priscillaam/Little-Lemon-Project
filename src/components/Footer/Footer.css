@@ -16,3 +16,31 @@ footer li{
 .social-media{
     grid-column: 7/span 4;
 }
+
+/* large tablets and laptops  */
+@media screen and (min-width: 900px){
+    footer h4{
+        font-size: 1em;
+    }
+    footer li{
+        font-size: .8em;
+    }
+    .contact-info{
+        grid-column: 6/span 2;
+    }
+    .social-media{
+        grid-column: 8/span 2;
+    }
+
+}
+
+/* desktop styles  */
+@media screen and (min-width: 1120px){
+    .contact-info{
+        grid-column: 2/3;
+    }
+    .social-media{
+        grid-column: 3/4;
+    }
+
+}

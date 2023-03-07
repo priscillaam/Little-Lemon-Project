@@ -37,3 +37,51 @@
     height: 90px;
     border-radius: 4px;
 }
+/* small tablet styles  */
+@media screen and (min-width: 460px){
+    .reviews article {
+        grid-column: span 4;
+        width: 70%;
+    } 
+}
+@media screen and (min-width: 620px){
+    .reviews article {
+        grid-column-start: span 3 2;
+        width: 150px;
+        padding: 10px;
+    }
+    .reviews h3{
+        font-size: .6em;
+        max-width: 100px;
+    }
+    .reviews p{
+        max-width: 100%;
+        font-size: .5em;
+    }
+}
+
+/* large tablets and laptops  */
+@media screen and (min-width: 900px){
+    .reviews{
+        margin: 0 10%;
+    }
+    .reviews article {
+        grid-column-start: span 2;
+    }
+    .reviews h3{
+        font-size: .5em;
+    }
+    .reviews p{
+        font-size: .4em;
+    }
+}
+
+/* desktop styles  */
+@media screen and (min-width: 1050px){
+    .reviews{
+        margin: 0 18%;
+    }
+    .reviews article * {
+        max-width: 90%;
+    }
+}
