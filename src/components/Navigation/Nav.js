@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from '../assets/Logo.svg';
+import logo from '../../assets/Logo.svg';
 import { Link, Outlet } from 'react-router-dom';
-import Footer from './Footer';
+import Footer from '../Footer/Footer.js';
 import { HashLink } from 'react-router-hash-link';
+import './Nav.css';
 
 export const Nav = () => {
     return (

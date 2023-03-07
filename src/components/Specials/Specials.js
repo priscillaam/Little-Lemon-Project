@@ -1,8 +1,8 @@
 import React from "react";
-import specialImg1 from '../assets/greek-salad.jpg';
-import specialImg2 from '../assets/bruchetta.svg';
-import specialImg3 from '../assets/lemon-dessert.jpg';
-
+import specialImg1 from '../../assets/greek-salad.jpg';
+import specialImg2 from '../../assets/bruchetta.svg';
+import specialImg3 from '../../assets/lemon-dessert.jpg';
+import './Specials.css';
 
 export const Specials = () => {
     return(

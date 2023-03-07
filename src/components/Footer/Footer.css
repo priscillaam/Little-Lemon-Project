@@ -1,0 +1,18 @@
+footer{
+    background: var(--primary);
+    padding: 20px;
+}
+footer h4{
+    font-size: 1.2em;
+    margin: 0 auto;
+    font-weight: 600;
+}
+footer li{
+    font-size: .8em;
+}
+.contact-info{
+    grid-column: 3/span 4;
+}
+.social-media{
+    grid-column: 7/span 4;
+}

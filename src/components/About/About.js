@@ -1,6 +1,7 @@
 import React from "react";
-import aboutImg1 from '../assets/mario-and-adrian1.jpg';
-import aboutImg2 from '../assets/mario-and-adrian2.jpg';
+import aboutImg1 from '../../assets/mario-and-adrian1.jpg';
+import aboutImg2 from '../../assets/mario-and-adrian2.jpg';
+import './About.css';
 
 export const About = () => {
     return(

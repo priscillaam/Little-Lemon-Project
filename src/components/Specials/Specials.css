@@ -1,0 +1,71 @@
+#specials {
+    background: white;
+}
+#specials h2{
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--tertiary);
+}
+#specials .button {
+    margin: 10px auto;
+    display: flex;
+}
+.specials a{
+    grid-column: 1/9;
+    margin: 20px auto;
+    height: 500px;
+    padding: 0 0 10px 0;
+    background: rgba(0,0,0,0.1);
+    max-width: 75%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+.specials a *{
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0 0 20px;
+    /* align-self takes selected items and aligns center vertically? */
+}
+.specials img{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+a h3{
+    color: var(--tertiary);
+    font-size: 1em;
+    font-weight: 600;
+    position: absolute;
+}
+a :nth-child(3){
+    color: var(--quartern);
+    font-family: 'Karla';
+    font-size: .6em;
+    font-weight: 500;
+    position: absolute;
+    margin-top: 5px;
+    right: 10px;
+}
+a :nth-child(4){
+    color: var(--primary);
+    font-family: 'Karla';
+    font-size: .8em;
+    font-weight: 300;
+    margin: 50px 20px 0 0;
+}
+.specials button {
+    padding: 0;
+    margin: 0 10px 10px 20px;;
+    border: none;
+    background: none;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Karla';
+    color: var(--tertiary);
+    font-weight: 600;
+}

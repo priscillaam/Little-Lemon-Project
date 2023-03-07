@@ -1,9 +1,10 @@
 import './App.css';
 import './styles/styles.css';
-import Nav from './components/Nav';
-import BookingPage from './components/BookingPage';
+import Nav from './components/Navigation/Nav';
+import BookingPage from './components/Pages/BookingPage';
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/HomePage';
+import Home from './components/Pages/HomePage';
+import './styles/responsive.css'
 
 function App() {
   return (

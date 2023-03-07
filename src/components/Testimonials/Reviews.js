@@ -1,8 +1,9 @@
 import React from "react";
-import user1 from '../assets/man-reviewer1.jpg';
-import user2 from '../assets/woman-reviewer1.jpg';
-import user3 from '../assets/woman-reviewer2.jpg';
-import user4 from '../assets/man-reviewer2.jpg';
+import user1 from '../../assets/man-reviewer1.jpg';
+import user2 from '../../assets/woman-reviewer1.jpg';
+import user3 from '../../assets/woman-reviewer2.jpg';
+import user4 from '../../assets/man-reviewer2.jpg';
+import './Reviews.css';
 
 export const Reviews = () => {
     return(
@@ -11,7 +12,6 @@ export const Reviews = () => {
       <div className="reviews grid">
         <article>
           <img src={user4} alt=""/>
-          <h3>Jason Nguyen</h3>
           <h3>Jason Nguyen</h3>
           <p>Super fresh delicious food.</p>
         </article>
