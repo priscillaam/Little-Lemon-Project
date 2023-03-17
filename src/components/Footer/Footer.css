@@ -1,6 +1,10 @@
 footer{
     background: var(--primary);
     padding: 20px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
 }
 footer h4{
     font-size: 1.2em;
@@ -9,6 +13,8 @@ footer h4{
 }
 footer li{
     font-size: .8em;
+    color: var(--quinary);
+    list-style-type: none;
 }
 .contact-info{
     grid-column: 3/span 4;
@@ -16,7 +22,13 @@ footer li{
 .social-media{
     grid-column: 7/span 4;
 }
-
+footer a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 20px;
+    overflow-x: hidden;
+}
 /* large tablets and laptops  */
 @media screen and (min-width: 900px){
     footer h4{

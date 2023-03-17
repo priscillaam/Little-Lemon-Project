@@ -6,12 +6,12 @@ import About from '../About/About';
 
 export const Home = () => {
     return(
-      <>
+      <main>
         <CallToAction />
         <Specials />
         <Reviews />
         <About />
-      </>
+      </main>
     )
 }
 

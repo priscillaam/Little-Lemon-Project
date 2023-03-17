@@ -2,6 +2,10 @@ import React, { useState} from "react";
 import styled from 'styled-components';
 
 export const Form = () => {
+    const formWrapper = {
+      minHeight: 'calc(100vh - 245px)',
+    }
+
     const [formData, setFormData] = useState({
         date: '',
         time: '',
@@ -74,7 +78,7 @@ export const Form = () => {
       };
     
       return (
-            <>
+            <div style={formWrapper}>
         <form onSubmit={handleSubmit}>
             <Wrapper>
         <Left>
@@ -132,7 +136,7 @@ export const Form = () => {
           </Right>
           </Wrapper>
         </form>
-        </>
+        </div>
       );
     };
 export default Form;
@@ -142,7 +146,6 @@ const Wrapper = styled.div`
     width: 100%;
     overflow: hidden;
     justify-content: center;
-    height: calc(100vh - 360px); /* subtract 100px for any header or footer elements */
     display: grid;
     grid-template-columns: 1fr 1fr;
 `

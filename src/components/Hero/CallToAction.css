@@ -82,6 +82,10 @@
 }
 /* desktop styles  */
 @media screen and (min-width: 1150px){
+    #reserve{
+        padding: 75px;
+        background: linear-gradient(to bottom, var(--primary) 70%, white 0%);
+    }
     .reserve-text{
         margin-top: 15%;
         margin-left: 175px;
@@ -91,6 +95,6 @@
         margin-right: 100px;
     }
     .reserve-img img{
-        width: 65%;
+        width: 85%;
     }
 }
