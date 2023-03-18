@@ -82,6 +82,28 @@ export const Form = () => {
         <form onSubmit={handleSubmit}>
             <Wrapper>
         <Left>
+        <div>
+            <label htmlFor="firstName">First name:</label><br/>
+            {formErrors.firstName && <span>{formErrors.firstName}</span>}
+            <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label htmlFor="lastName">Last name:</label><br/>
+            {formErrors.lastName && <span>{formErrors.lastName}</span>}
+            <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label><br/>
+            {formErrors.email && <span>{formErrors.email}</span>}
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} />
+          </div>
+          <div>
+            <label htmlFor="phone">Phone:</label><br/>
+            {formErrors.phone && <span>{formErrors.phone}</span>}
+            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} />
+          </div>
+          </Left>
+          <Right>
           <div>
             <label htmlFor="date">Date:</label><br/>
             {formErrors.date && <span>{formErrors.date}</span>}
@@ -108,28 +130,6 @@ export const Form = () => {
               <option value="Other">Other</option>
             </select>
           </div>
-          </Left>
-          <Right>
-          <div>
-            <label htmlFor="firstName">First name:</label><br/>
-            {formErrors.firstName && <span>{formErrors.firstName}</span>}
-            <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} />
-          </div>
-          <div>
-            <label htmlFor="lastName">Last name:</label><br/>
-            {formErrors.lastName && <span>{formErrors.lastName}</span>}
-            <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} />
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label><br/>
-            {formErrors.email && <span>{formErrors.email}</span>}
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} />
-          </div>
-          <div>
-            <label htmlFor="phone">Phone:</label><br/>
-            {formErrors.phone && <span>{formErrors.phone}</span>}
-            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} />
-          </div>
           <Button>
             <button type="submit">Submit</button>
           </Button>
@@ -148,6 +148,9 @@ const Wrapper = styled.div`
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 769px ) {
+      grid-template-columns: 1fr;
+    }
 `
 const FormStyle = styled.div`
     width: 50%;
@@ -167,6 +170,9 @@ const FormStyle = styled.div`
     div {
         padding: 5px;
     }
+    @media screen and (max-width: 769px ) {
+      margin: 0 auto;
+    }
 `
 const Button = styled.div`
     button{
@@ -180,6 +186,10 @@ const Button = styled.div`
         font-size: .6em;
         font-weight: 600;
         margin: 30px auto;
+    }
+    @media screen and (max-width: 769px ) {
+      justify-content: center;
+      display: flex;
     }
 `
 const Left = styled(FormStyle)`
